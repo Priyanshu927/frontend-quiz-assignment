@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@keyframes paw-blink {
+  0%, 100% {
+    transform: translateY(0) rotate(0deg);
+    opacity: 1;
+  }
+  25% {
+    transform: translateY(-3px) rotate(-4deg);
+    opacity: 0.95;
+  }
+  50% {
+    transform: translateY(0) rotate(0deg);
+    opacity: 1;
+  }
+  75% {
+    transform: translateY(-2px) rotate(3deg);
+    opacity: 0.95;
+  }
+}
+
+.paw-blink {
+  animation: paw-blink 0.8s ease-in-out infinite;
+}
